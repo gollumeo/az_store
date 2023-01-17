@@ -11,7 +11,7 @@
 
 <body class="w-screen min-h-screen space-y-16 flex flex-col items-center text-white bg-gradient-to-t from-slate-900 to-slate-500">
     <header>
-        <div class="flex space-x-96 items-center w-screen justify-center">
+        <div class="flex w-screen justify-around items-center">
             <p>AZ[store]</p>
             <nav>
                 <a href="">Home</a>
@@ -22,10 +22,10 @@
             <img src="assets/resources/shopping-cart.svg" alt="Cart" width="30px" height="30px">
         </div>
     </header>
-    <main>
-        <div class="flex items-center justify-center space-x-32"> <!--BIG TITLE + SHOE -->
+    <main class="flex flex-col space-y-10">
+        <div class="flex items-center justify-center space-x-20"> <!--BIG TITLE + SHOE -->
             <div>
-                <p>SHOE THE RIGHT ONE.</p>
+                <p class="text-5xl">SHOE THE <br> RIGHT <span class="text-blue-700">ONE</span>.</p>
                 <button>See our store</button>
             </div>
             <div>
