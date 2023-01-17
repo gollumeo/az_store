@@ -33,8 +33,6 @@ $articles = [
     <input type="submit" name="add_to_cart" value="Add to Cart">
 </form>
 
-<? print_r($id) ?>
-
 <form method="post" action="cart.php">
     <label for="item_id">Select item:</label>
     <select id="item_id" name="item_id">
