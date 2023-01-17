@@ -513,6 +513,7 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+<<<<<<< HEAD
 .flex {
   display: flex;
 }
@@ -593,3 +594,17 @@ video {
   --tw-text-opacity: 1;
   color: rgb(29 78 216 / var(--tw-text-opacity));
 }
+=======
+.table {
+  display: table;
+}
+
+.hidden {
+  display: none;
+}
+
+.bg-orange-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 215 170 / var(--tw-bg-opacity));
+}
+>>>>>>> origin/pierre
