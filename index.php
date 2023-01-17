@@ -33,7 +33,9 @@
             </div>
         </div>
         <div class="flex justify-center"><!--SNEAKERS LIST-->
-            <div>
+            <?php include 'articles.php'; ?>
+
+            <!-- <div>
                 <img src="assets/resources/shoe_one.png" alt="" width="150px" height="150px">
                 <div>
                     <div></div>
@@ -60,7 +62,7 @@
                     <div></div>
                     <button></button>
                 </div>
-            </div>
+            </div> -->
         </div>
         <div class="flex justify-center"><!--PROVIDE THE BEST QUALITY-->
             <img src="assets/resources/shoe_two.png" alt="" width="100px" height="100px">

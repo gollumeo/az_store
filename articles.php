@@ -36,7 +36,7 @@ foreach ($articles as $item) {
         <input type="submit" name="add_to_cart" value="Add to Cart">
     </form>
 <?
-}
+};
 
 if (isset($_POST['add_to_cart'])) {
     $item_id = $_POST['item_id'];
