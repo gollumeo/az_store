@@ -1,4 +1,5 @@
 <?php
+session_start();
 $articles = [
     [
         "id" => 1,
@@ -26,32 +27,18 @@ $articles = [
     ],
 ];
 
+foreach ($articles as $item) {
 ?>
-<form method="post" action="cart.php">
-    <input type="hidden" name="item_id" value="<?php echo $item['id']; ?>">
-    <input type="number" name="quantity" min="1" value="1">
-    <input type="submit" name="add_to_cart" value="Add to Cart">
-</form>
 
-<? print_r($id) ?>
+    <form method="post" action="cart.php">
+        <input type="hidden" name="item_id" value="<?php echo $item['id']; ?>">
+        <input type="number" name="quantity" min="1" value="1">
+        <input type="submit" name="add_to_cart" value="Add to Cart">
+    </form>
+<?
+}
 
-<form method="post" action="cart.php">
-    <label for="item_id">Select item:</label>
-    <select id="item_id" name="item_id">
-        <?php
-        foreach ($items as $item) {
-            echo "<option value='" . $item['id'] . "'>" . $item['name'] . "</option>";
-        }
-        ?>
-    </select>
-    <br>
-    <label for="quantity">Quantity:</label>
-    <input type="number" id="quantity" name="quantity" min="1">
-    <br>
-    <input type="submit" name="add_to_cart" value="Add to cart">
-</form>
-
-<? if (isset($_POST['add_to_cart'])) {
+if (isset($_POST['add_to_cart'])) {
     $item_id = $_POST['item_id'];
     $quantity = $_POST['quantity'];
     if (!isset($_SESSION['cart'])) {
