@@ -35,21 +35,29 @@ foreach ($articles as $item) {
         <input type="number" name="quantity" min="1" value="1">
         <input type="submit" name="add_to_cart" value="Add to Cart">
     </form>
+
+
 <?
 }
 
-if (isset($_POST['add_to_cart'])) {
+if (!isset($_SESSION['cart'])) {
+    $_SESSION['cart'] = array();
+}
+
+if (isset($_POST['add_to_cart']) && isset($_POST['item_id']) && array_key_exists($_POST['item_id'], $articles)) {
     $item_id = $_POST['item_id'];
-    $quantity = $_POST['quantity'];
+    $item = $articles[$item_id];
+    $quantity = isset($_POST['quantity']) ? $_POST['quantity'] : 1;
     if (!isset($_SESSION['cart'])) {
         $_SESSION['cart'] = array();
     }
     if (!isset($_SESSION['cart'][$item_id])) {
         // If the item isn't in the cart, add it with the specified quantity
-        $_SESSION['cart'][$item_id] = $quantity;
+        $_SESSION['cart'][$item_id] = array("quantity" => $quantity, "price" => $item["price"], "name" => $item["name"]);
     } else {
         // If the item is already in the cart, update the quantity
-        $_SESSION['cart'][$item_id] += $quantity;
+        $_SESSION['cart'][$item_id]["quantity"] += $quantity;
     }
 }
+
 ?>
