@@ -13,7 +13,7 @@
     <header>
         <div class="flex space-x-96 items-center w-screen justify-center">
             <p>AZ[store]</p>
-            <nav>
+            <nav >
                 <a href="">Home</a>
                 <a href="">About</a>
                 <a href="">Products</a>
@@ -35,30 +35,34 @@
         <div class="flex justify-center"><!--SNEAKERS LIST-->
             <div>
                 <img src="assets/resources/shoe_one.png" alt="" width="150px" height="150px">
-                <div>
-                    <div></div>
-                    <button></button>
+                <div class="flex spac-x-2 justify-center">
+                    <div>
+                        <button type="button" class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Add to card</button>
+                    </div>
                 </div>
             </div>
             <div>
                 <img src="assets/resources/shoe_one.png" alt="" width="150px" height="150px">
-                <div>
-                    <div></div>
-                    <button></button>
+                <div class="flex spac-x-2 justify-center">
+                    <div>
+                        <button type="button" class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Add to card</button>
+                    </div>
                 </div>
             </div>
             <div>
                 <img src="assets/resources/shoe_one.png" alt="" width="150px" height="150px">
-                <div>
-                    <div></div>
-                    <button></button>
+                <div class="flex spac-x-2 justify-center">
+                    <div>
+                        <button type="button" class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Add to card</button>
+                    </div>
                 </div>
             </div>
             <div>
                 <img src="assets/resources/shoe_one.png" alt="" width="150px" height="150px">
-                <div>
-                    <div></div>
-                    <button></button>
+                <div class="flex spac-x-2 justify-center">
+                    <div>
+                        <button type="button" class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Add to card</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -94,21 +98,3 @@
         </nav>
     </footer>
 </body>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/output.css">
-    <title>Document</title>
-</head>
-<div class="bg-slate-900">test</div>
-
-<body>
-
-</body>
-
-</html>
-</html>
