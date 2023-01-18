@@ -12,9 +12,9 @@
 </head>
 
 <body class="min-h-screen flex flex-col items-center text-white bg-gradient-to-t from-slate-900 to-slate-500">
-    <header class="flex flex-row w-full justify-around items-center border-b-[1px] border-slate-400 border-solid h-14">
-        <p class="header font-bold text-xl">AZ[store]</p>
-        <nav class="header text-sm">
+    <header class="flex flex-row w-full justify-around items-center border-b-[1px] border-slate-400 border-solid h-12">
+        <p class="header font-bold"><a href="./index.php">AZ[store]</a></p>
+        <nav class="flex header text-sm gap-4 text-bold font-medium">
             <a href="./index.php">Home</a>
             <a href="#">About</a>
             <a href="#">Products</a>
@@ -22,10 +22,10 @@
         </nav>
 
         <div class="flex flex-row w-auto h-auto text-sm justify-center items-center">
-            <img src="assets/resources/shopping-cart.svg" alt="Cart" height="25" width="25" class="white"><a href="./cart.php" alt="shopping cart"><span class="ml-1">Login</span></a>
+            <img src="assets/resources/shopping-cart.svg" alt="Cart" class="text-sm h-[16px] w-[16px]"><a href="./cart.php" alt="shopping cart"><span class="inline-block ml-2 font-normal">Login</span></a>
         </div>
     </header>
-    <h1 class="text-center font-black text-4xl mt-8 mb-10">Shopping Cart</h1>
+    <h1 class="text-center font-black text-6xl mt-8 mb-16 underline text-gray-300">Shopping Cart</h1>
     <?php
     // Creating an array to store items to purchase
     $articles = [
@@ -111,8 +111,8 @@
 
     <!-- <div class="summary"> -->
     <table class="text-center m-2 border-2 border-solid border-black w-1/2 mx-auto shadow-md bg-slate-800 shadow-slate-800">
-        <tr class="border-2 border-solid border-black">
-            <th class="border-2 border-solid border-black">Item</th>
+        <tr class="border-2 border-solid border-black p-2">
+            <th class="border-2 border-solid border-black p-2">Item</th>
             <th class="border-2 border-solid border-black">Quantity</th>
             <th class="border-2 border-solid border-black">Price</th>
             <th class="border-2 border-solid border-black">Total</th>
@@ -129,7 +129,7 @@
                 $total += $item_total;
         ?>
                 <tr class="p-2">
-                    <td class="border-r-2 border-solid border-black">
+                    <td class="border-r-2 border-solid border-black ">
                         <?php echo $name; ?>
                     </td>
                     <td class="border-r-2 border-solid border-black">
@@ -144,7 +144,7 @@
                     <td class="border-r-2 border-solid border-black">
                         <form method="post" action="cart.php">
                             <input type="hidden" name="item_id" value="<?php echo $item_id; ?>">
-                            <input type="submit" name="remove_from_cart" value="Remove" class="bg-white w-auto p-2 rounded-3xl text-slate-700 hover:bg-slate-700 hover:text-white shadow-md shadow-red h-auto transition-all">
+                            <input type="submit" name="remove_from_cart" value="Remove" class="bg-white w-auto p-2 rounded-lg text-slate-700 hover:bg-slate-700 hover:text-white shadow-md shadow-red h-auto transition-all">
                         </form>
                     </td>
                 </tr>
@@ -159,11 +159,11 @@
         </tr>
     </table>
     <div class="mx-auto mt-20 flex flex-row gap-5">
-        <a href="./index.php" alt="homepage"><button class="bg-slate-900 p-3 rounded-2xl text-lg font-bold hover:scale-110 transition-all shadow-lg w-[10vw] h-auto text-md shadow-black hover:bg-white hover:text-slate-900">Back to shopping</button></a>
-        <a href="./index.php" alt="homepage"><button class="bg-blue-500 text-white p-3 rounded-2xl text-lg font-bold hover:scale-110 transition-all shadow-lg w-[10vw] h-auto shadow-black hover:bg-white hover:text-blue-500">Purchase</button></a>
+        <a href="./index.php" alt="homepage"><button class="bg-slate-900 p-3 rounded-lg text-lg font-bold hover:scale-110 transition-all shadow-lg w-[10vw] h-auto text-md shadow-black hover:bg-white hover:text-slate-900">Back to shopping</button></a>
+        <a href="./checkout.php" alt="homepage"><button class="bg-blue-500 text-white p-3 rounded-lg text-lg font-bold hover:scale-110 transition-all shadow-lg w-[10vw] h-auto shadow-black hover:bg-white hover:text-blue-500">Purchase</button></a>
     </div>
-    <footer class="absolute bottom-0 border-t-[1px] border-slate-400 border-solid w-full text-center">
-        <nav class="text-2xl">
+    <footer class="flex flex-row absolute bottom-0 border-t-[1px] border-slate-400 border-solid h-20 w-full text-center justify-center items-center text-sm">
+        <nav class="flex font-medium gap-4">
             <a href="">Home</a>
             <a href="">About</a>
             <a href="">Products</a>
