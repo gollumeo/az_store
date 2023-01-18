@@ -533,6 +533,10 @@ video {
   width: 100vw;
 }
 
+.w-32 {
+  width: 8rem;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -571,6 +575,10 @@ video {
   --tw-space-x-reverse: 0;
   margin-right: calc(7rem * var(--tw-space-x-reverse));
   margin-left: calc(7rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.rounded-full {
+  border-radius: 9999px;
 }
 
 .bg-gradient-to-t {

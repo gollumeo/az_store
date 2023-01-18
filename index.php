@@ -34,7 +34,6 @@
         </div>
         <div class="flex justify-center"><!--SNEAKERS LIST-->
             <?php include 'articles.php'; ?>
-
             <!-- <div>
                 <img src="assets/resources/shoe_one.png" alt="" width="150px" height="150px">
                 <div>
@@ -71,17 +70,17 @@
         </div>
         <div class="flex justify-center space-x-28"><!--REVIEWS-->
             <div>
-                <img src="assets/resources/image-emily.jpg" alt="">
+                <img src="assets/resources/image-emily.jpg" class="rounded-full w-32" alt="">
                 <p></p>
                 <p></p>
             </div>
             <div>
-                <img src="assets/resources/image-thomas.jpg" alt="">
+                <img src="assets/resources/image-thomas.jpg" class="rounded-full w-32" alt="">
                 <p></p>
                 <p></p>
             </div>
             <div>
-                <img src="assets/resources/image-jennie.jpg" alt="">
+                <img src="assets/resources/image-jennie.jpg" class="rounded-full w-32" alt="">
                 <p></p>
                 <p></p>
             </div>

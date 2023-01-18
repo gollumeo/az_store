@@ -5,38 +5,41 @@ $articles = [
         "id" => 1,
         "name" => "Nike 1",
         "size" => "42",
-        "price" => "230"
+        "price" => "230",
+        "image" => "assets/resources/shoe_one.png"
     ],
     [
         "id" => 2,
         "name" => "Nike 2",
         "size" => "40",
-        "price" => "230"
+        "price" => "230",
+        "image" => "assets/resources/shoe_one.png"
     ],
     [
         "id" => 3,
         "name" => "Nike 3",
         "size" => "38",
-        "price" => "230"
+        "price" => "230",
+        "image" => "assets/resources/shoe_one.png"
     ],
     [
         "id" => 4,
         "name" => "Nike 4",
         "size" => "44",
-        "price" => "230"
+        "price" => "230",
+        "image" => "assets/resources/shoe_one.png"
     ],
 ];
 
 foreach ($articles as $item) {
 ?>
-
-    <form method="post" action="cart.php">
+    <div><img src="<?php echo $item["image"]; ?>" alt=""></div>
+    <form method=" post" action="cart.php">
         <input type="hidden" name="item_id" value="<?php echo $item['id']; ?>">
         <input type="number" name="quantity" min="1" value="1">
         <input type="submit" name="add_to_cart" value="Add to Cart">
     </form>
-<?
-};
+<?php };
 
 if (isset($_POST['add_to_cart'])) {
     $item_id = $_POST['item_id'];
