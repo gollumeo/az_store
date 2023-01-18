@@ -513,6 +513,23 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.articles {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
 .flex {
   display: flex;
 }
@@ -529,12 +546,20 @@ video {
   min-height: 100vh;
 }
 
-.w-screen {
-  width: 100vw;
+.w-full {
+  width: 100%;
+}
+
+.w-3\/5 {
+  width: 60%;
 }
 
 .w-32 {
   width: 8rem;
+}
+
+.w-10\/12 {
+  width: 83.333333%;
 }
 
 .flex-col {
@@ -551,6 +576,10 @@ video {
 
 .justify-around {
   justify-content: space-around;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
 }
 
 .space-y-16 > :not([hidden]) ~ :not([hidden]) {
@@ -595,9 +624,28 @@ video {
   --tw-gradient-to: #64748b;
 }
 
-.text-5xl {
-  font-size: 3rem;
+.text-center {
+  text-align: center;
+}
+
+.text-9xl {
+  font-size: 8rem;
   line-height: 1;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-8xl {
+  font-size: 6rem;
+  line-height: 1;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-white {

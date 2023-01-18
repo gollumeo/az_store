@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .articles {
+    @apply flex flex-col;
+  }
+  .header {
+    @apply text-3xl;
+  }
+  .review {
+    @apply flex flex-col items-center text-center;
+  }
+}
