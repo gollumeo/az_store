@@ -26,11 +26,12 @@
                 <p class="text-9xl">SHOE THE <br> RIGHT <span class="text-blue-700">ONE</span>.</p>
                 <button class="text-3xl">See our store</button>
             </div>
-            <div>
-                <img src="assets/resources/shoe_one.png" alt="nike" width="800px" height="800px">
+            <div class="relative">
+                <p class="absolute text-[450px] text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10">NIKE</p>
+                <img class="z-50" src="assets/resources/shoe_one.png" alt="nike">
             </div>
         </div>
-        <div>
+        <div class="">
             <p>Our last products</p>
             <div class="w-full flex justify-around"><!--SNEAKERS LIST-->
                 <?php include 'articles.php'; ?>
