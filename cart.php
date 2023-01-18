@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/output.css">
-    <title>Shopping Cart</title>
+    <title>AZ[store] - Shopping Cart</title>
 </head>
 
 <body class="flex flex-col bg-gradient-to-t from-slate-900 to-slate-500 min-h-screen w-screen text-zinc-200">
