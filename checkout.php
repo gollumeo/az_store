@@ -7,89 +7,133 @@
     <link rel="stylesheet" href="./output.css" type="text/css">
     <title>Checkout</title>
 </head>
-<body>
+<body class="bg-gradient-to-t from-slate-900 to-slate-500 bg-no-repeat h-screen w-full flex flex-col justify-center items-center">
 <?php
     session_start();
 ?>
-    <form action="checkout.php" method="get" class="flex-row justify-center">
-        <div class='flex-1 flex justify-center'>
-            <div class='flex-1 text-center w-full'>
-                <p class="w-full flex justify-between">
-                    <label class='text-right mr-4 w-full mt-3' for="lastname">Nom: </label>
-                    <input class='text-left ml-4 h-10 border mt-1 rounded px-4 w-full bg-gray-50' type="text" id="lastname" placeholder="Pierre" name="lastname" value="<?php echo $_SESSION["personnalDatas"]['lastname'] ?>"><br>
+    <form action="checkout.php" method="get" class='bg-slate-500 shadow-md rounded px-8 pt-6 pb-8 mb-4 mt-4 w-9/12 my-2 flex flex-col justify-center items-center content-center'>
+        <div class="bg-slate-400 shadow-md rounded px-8 pt-6 pb-8 mb-4 mt-4 w-9/12 my-2">
+            <h2 class="block uppercase tracking-wide text-grey-darker text-xl font-bold mb-2">
+                Informations sur vous:
+            </h2>
+            <div class='grid grid-rows-2 grid-cols-3'>
+                <p class="col-span-1 row-span-1">
+                    <label class='label_input' for="lastname">
+                        Nom: 
+                    </label>
+                    <input class='input' type="text" id="lastname" placeholder="Pierre" name="lastname" value="<?php echo $_SESSION["personnalDatas"]['lastname'] ?>">
                 </p>    
-                <p class="w-full flex justify-between">
-                    <label class='text-right mr-4 w-full mt-3' for="firstname">Prenom: </label>
-                    <input class='text-left ml-4 h-10 border mt-1 rounded px-4 w-full bg-gray-50' type="text" id="firstname" placeholder="Lebo" name="firstname" value="<?php echo $_SESSION["personnalDatas"]['firstname'] ?>"><br>
+                <p class="row-span-1 col-span-2">
+                    <label class='label_input' for="firstname">
+                        Prenom: 
+                    </label>
+                    <input class='input' type="text" id="firstname" placeholder="Lebo" name="firstname" value="<?php echo $_SESSION["personnalDatas"]['firstname'] ?>">
                 </p>
-                <p class="w-full flex justify-between">
-                    <label class='text-right mr-4 w-full mt-3' for="mail">E-mail: </label>
-                    <input class='text-left ml-4 h-10 border mt-1 rounded px-4 w-full bg-gray-50' type="text" id="mail" placeholder="plebo@tre.bo" name="mail" value="<?php echo $_SESSION["personnalDatas"]['mail'] ?>"><br>
+                <p class="col-span-2">
+                    <label class='label_input' for="mail">
+                        E-mail: 
+                    </label>
+                    <input class='input' type="text" id="mail" placeholder="plebo@tre.bo" name="mail" value="<?php echo $_SESSION["personnalDatas"]['mail'] ?>">
                 </p>
-                <p class="w-full flex justify-between">
-                    <label class='text-right mr-4 w-full mt-3' for="phone">Num telephone: </label>
-                    <input class='text-left ml-4 h-10 border mt-1 rounded px-4 w-full bg-gray-50' maxlength="10" type="number" id="phone" placeholder="0123456789" name="phone" value="<?php echo $_SESSION["personnalDatas"]['phone'] ?>"><br>
-                </p>
-            </div>
-            <div class='flex-1 text-center'>
-                <p class="w-full flex justify-between">
-                    <label class='text-right mr-4 w-full mt-3' for="street">Rue: </label>
-                    <input class='text-left ml-4 h-10 border mt-1 rounded px-4 w-full bg-gray-50' type="text" id="street" placeholder="Rue du magnifique" name="street" value="<?php echo $_SESSION["personnalDatas"]['street'] ?>"><br>
-                </p>    
-                <p class="w-full flex justify-between">
-                    <label class='text-right mr-4 w-full mt-3' for="num">Numero: </label>
-                    <input class='text-left ml-4 h-10 border mt-1 rounded px-4 w-full bg-gray-50' type="number" id="num" placeholder="666" name="num" value="<?php echo $_SESSION["personnalDatas"]['num'] ?>"><br>
-                </p>
-                <p class="w-full flex justify-between">
-                    <label class='text-right mr-4 w-full mt-3' for="add">Info complementaire: </label>
-                    <input class='text-left ml-4 h-10 border mt-1 rounded px-4 w-full bg-gray-50' type="text" id="add" placeholder="bb" name="add" value="<?php echo $_SESSION["personnalDatas"]['add'] ?>"><br>
-                </p>
-                <p class="w-full flex justify-between">
-                    <label class='text-right mr-4 w-full mt-3' for="city">Ville: </label>
-                    <input class='text-left ml-4 h-10 border mt-1 rounded px-4 w-full bg-gray-50' type="text" id="city" placeholder="LeuPluBo" name="city" value="<?php echo $_SESSION["personnalDatas"]['city'] ?>"><br>
-                </p>
-                <p class="w-full flex justify-between">
-                    <label class='text-right mr-4 w-full mt-3' for="postal">Code postal: </label>
-                    <input class='text-left ml-4 h-10 border mt-1 rounded px-4 w-full bg-gray-50' type="number" id="postal" placeholder="4321" name="postal" value="<?php echo $_SESSION["personnalDatas"]['postal'] ?>"><br>
+                <p class="col-span-1">
+                    <label class='label_input' for="phone">
+                        Num telephone: 
+                    </label>
+                    <input class='input' maxlength="10" type="number" id="phone" placeholder="0123456789" name="phone" value="<?php echo $_SESSION["personnalDatas"]['phone'] ?>">
                 </p>
             </div>
         </div>
-        <div class='flex-1 w-full'>
-            <p class="w-full flex justify-between">
-                <label class='text-right mr-4 w-full mt-3' for="cardNum">Num carte: </label>
-                <input class='text-left ml-4 mr-96 h-10 border mt-1 rounded px-4 w-1/2 bg-gray-50' maxlength="16" type="number" id="cardNum" placeholder="1234 5678 9123 4567" name="cardNum" value="<?php echo $_SESSION["personnalDatas"]['cardNum'] ?>"><br>
-            </p>    
-            <p class="w-full flex justify-between">
-                <label class='text-right mr-4 w-full mt-3' for="cardName">Nom sur la carte: </label>
-                <input class='text-left ml-4 mr-96 h-10 border mt-1 rounded px-4 w-1/2 bg-gray-50' type="text" id="cardName" placeholder="Pierre Lebo" name="cardName" value="<?php echo $_SESSION["personnalDatas"]['cardName'] ?>"><br>
-            </p>
-            <p class="w-full flex justify-between">
-                <label class='text-right mr-4 w-full mt-3' for="cardMonth">Mois: </label>
-                <select name="cardMonth" id="cardMonth" class="text-left ml-4 mr-96 h-10 border mt-1 rounded px-4 w-1/2 bg-gray-50" x-model="expired.month">
-                    <?php 
-                        for ($i=1; $i < 13; $i++) 
-                            echo '<option '.(($i == $_SESSION["personnalDatas"]["cardMonth"]) ? 'selected disabled': '').'value='.sprintf("%02d", $i).'>'.sprintf("%02d", $i).'</option>';
-                    ?>
-                </select>
-            </p>
-            <p class="w-full flex justify-between">
-                <label class='text-right mr-4 w-full mt-3' for="cardYear">Annee: </label>
-                <select name="cardYear" id="cardYear" class="text-left ml-4 mr-96 h-10 border mt-1 rounded px-4 w-1/2 bg-gray-50" x-model="expired.year" >
-                    <?php 
-                        for ($i=2023; $i < 2030; $i++) 
-                            echo '<option '.(($i == $_SESSION["personnalDatas"]["cardYear"]) ? 'selected disabled' : '' ).' value='.sprintf("%02d", $i).'>'.sprintf("%02d", $i).'</option>';
-                    ?>
-                </select>
-            </p>
-            <p class="w-full flex justify-between">
-                <label class='text-right mr-4 w-full mt-3' for="cardSecret">Code secret: </label>
-                <input class='text-left ml-4 mr-96 h-10 border mt-1 rounded px-4 w-1/2 bg-gray-50' type="number" id="cardSecret" maxlength="3" placeholder="123" name="cardSecret" value="<?php echo $_SESSION["personnalDatas"]['cardSecret'] ?>"><br>
-            </p>
+
+        <div class="bg-slate-400 shadow-md rounded px-8 pt-6 pb-8 mb-4 mt-4 w-9/12 my-2">
+            <h2  class="block uppercase tracking-wide text-grey-darker text-xl font-bold mb-2">
+                Ou souhaitez vous etre livre:
+            </h2>
+            <div class="grid-rows-2 grid grid-cols-5">
+                <p class="col-span-1 row-span-1">
+                    <label class='label_input' for="street">
+                        Rue: 
+                    </label>
+                    <input class='input' type="text" id="street" placeholder="Rue du magnifique" name="street" value="<?php echo $_SESSION["personnalDatas"]['street'] ?>">
+                </p>    
+                <p class="col-span-1 row-span-1">
+                    <label class='label_input' for="num">
+                        Numero: 
+                    </label>
+                    <input class='input' type="number" id="num" placeholder="666" name="num" value="<?php echo $_SESSION["personnalDatas"]['num'] ?>">
+                </p>
+                <p class="col-span-3 row-span-1">
+                    <label class='label_input' for="add">
+                        Info complementaire: 
+                    </label>
+                    <input class='input' type="text" id="add" placeholder="bb" name="add" value="<?php echo $_SESSION["personnalDatas"]['add'] ?>">
+                </p>
+                <p class="col-span-3 row-span-1">
+                    <label class='label_input' for="city">
+                        Ville: 
+                    </label>
+                    <input class='input' type="text" id="city" placeholder="LeuPluBo" name="city" value="<?php echo $_SESSION["personnalDatas"]['city'] ?>">
+                </p>
+                <p class="col-span-2 row-span-1">
+                    <label class='label_input' for="postal">
+                        Code postal: 
+                    </label>
+                    <input class='input' type="number" id="postal" placeholder="4321" name="postal" value="<?php echo $_SESSION["personnalDatas"]['postal'] ?>">
+                </p>
+            </div>
         </div>
-        <button class='bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded'>bouh</button>
+
+        <div class='bg-slate-400 shadow-md rounded px-8 pt-6 pb-8 mb-4 mt-4 w-9/12 my-2'>
+            <h2  class="block uppercase tracking-wide text-grey-darker text-xl font-bold mb-2">
+                Votre carte banquaire:
+            </h2>
+            <div class="grid-rows-2 grid grid-cols-5">
+                <p class="col-span-5 row-span-1">
+                    <label class='label_input' for="cardNum">
+                        Num carte: 
+                    </label>
+                    <input class='input' maxlength="16" type="number" id="cardNum" placeholder="1234 5678 9123 4567" name="cardNum" value="<?php echo $_SESSION["personnalDatas"]['cardNum'] ?>">
+                </p>    
+                <p class="col-span-2 row-span-1">
+                    <label class='label_input' for="cardName">
+                        Nom sur la carte: 
+                    </label>
+                    <input class='input' type="text" id="cardName" placeholder="Pierre Lebo" name="cardName" value="<?php echo $_SESSION["personnalDatas"]['cardName'] ?>">
+                </p>
+                <p class="col-span-1 row-span-1">
+                    <label class='label_input' for="cardMonth">
+                        Mois: 
+                    </label>
+                    <select name="cardMonth" id="cardMonth" class="input" x-model="expired.month">
+                        <?php 
+                            for ($i=1; $i < 13; $i++) 
+                                echo '<option '.(($i == $_SESSION["personnalDatas"]["cardMonth"]) ? 'selected disabled': '').'value='.sprintf("%02d", $i).'>'.sprintf("%02d", $i).'</option>';
+                        ?>
+                    </select>
+                </p>
+                <p class="col-span-1 row-span-1">
+                    <label class='label_input' for="cardYear">
+                        Annee: 
+                    </label>
+                    <select name="cardYear" id="cardYear" class="input" x-model="expired.year" >
+                        <?php 
+                            for ($i=2023; $i < 2030; $i++) 
+                                echo '<option '.(($i == $_SESSION["personnalDatas"]["cardYear"]) ? 'selected' : '' ).' value='.sprintf("%04d", $i).'>'.sprintf("%04d", $i).'</option>';
+                        ?>
+                    </select>
+                </p>
+                <p class="col-span-1 row-span-1">
+                    <label class='label_input' for="cardSecret">
+                        Code secret: 
+                    </label>
+                    <input class='input' type="number" id="cardSecret" maxlength="3" placeholder="123" name="cardSecret" value="<?php echo $_SESSION["personnalDatas"]['cardSecret'] ?>">
+                </p>
+            </div>
+        </div>
+        <button class='inline-flex items-center px-4 py-2 bg-gray-200 hover:bg-gray-300 text-gray-800 text-sm font-medium rounded-md'>bouh</button>
     </form>
+    
     <?php
-    var_dump($_SESSION["personnalDatas"]);
+    // var_dump($_SESSION["personnalDatas"]);
     $pesronnalDatas = array(
         'lastname' => $_GET['lastname'],
         'firstname' => $_GET['firstname'],
