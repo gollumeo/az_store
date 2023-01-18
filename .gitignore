@@ -104,4 +104,5 @@ dist
 # TernJS port file
 .tern-port
 
-./assets/input.css
+assets/input.css
+assets/output.css
