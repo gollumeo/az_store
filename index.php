@@ -9,11 +9,12 @@
     <title>Document</title>
 </head>
 
-<body class="w-screen min-h-screen space-y-16 flex flex-col items-center text-white bg-gradient-to-t from-slate-900 to-slate-500">
+<body
+    class="w-screen min-h-screen space-y-16 flex flex-col items-center text-white bg-gradient-to-t from-slate-900 to-slate-500">
     <header>
         <div class="flex space-x-96 items-center w-screen justify-center">
             <p>AZ[store]</p>
-            <nav >
+            <nav>
                 <a href="">Home</a>
                 <a href="">About</a>
                 <a href="">Products</a>
@@ -23,7 +24,8 @@
         </div>
     </header>
     <main>
-        <div class="flex items-center justify-center space-x-32"> <!--BIG TITLE + SHOE -->
+        <div class="flex items-center justify-center space-x-32">
+            <!--BIG TITLE + SHOE -->
             <div>
                 <p>SHOE THE RIGHT ONE.</p>
                 <button>See our store</button>
@@ -32,12 +34,15 @@
                 <img src="assets/resources/shoe_one.png" alt="nike" width="300px" height="300px">
             </div>
         </div>
-        <div class="flex justify-center"><!--SNEAKERS LIST-->
+        <div class="flex justify-center">
+            <!--SNEAKERS LIST-->
             <div>
                 <img src="assets/resources/shoe_one.png" alt="" width="150px" height="150px">
                 <div class="flex spac-x-2 justify-center">
                     <div>
-                        <button type="button" class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Add to card</button>
+                        <button type="button"
+                            class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Add
+                            to card</button>
                     </div>
                 </div>
             </div>
@@ -45,7 +50,9 @@
                 <img src="assets/resources/shoe_one.png" alt="" width="150px" height="150px">
                 <div class="flex spac-x-2 justify-center">
                     <div>
-                        <button type="button" class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Add to card</button>
+                        <button type="button"
+                            class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Add
+                            to card</button>
                     </div>
                 </div>
             </div>
@@ -53,7 +60,9 @@
                 <img src="assets/resources/shoe_one.png" alt="" width="150px" height="150px">
                 <div class="flex spac-x-2 justify-center">
                     <div>
-                        <button type="button" class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Add to card</button>
+                        <button type="button"
+                            class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Add
+                            to card</button>
                     </div>
                 </div>
             </div>
@@ -61,17 +70,21 @@
                 <img src="assets/resources/shoe_one.png" alt="" width="150px" height="150px">
                 <div class="flex spac-x-2 justify-center">
                     <div>
-                        <button type="button" class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Add to card</button>
+                        <button type="button"
+                            class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Add
+                            to card</button>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="flex justify-center"><!--PROVIDE THE BEST QUALITY-->
+        <div class="flex justify-center">
+            <!--PROVIDE THE BEST QUALITY-->
             <img src="assets/resources/shoe_two.png" alt="" width="100px" height="100px">
             <p></p>
             <p></p>
         </div>
-        <div class="flex justify-center space-x-28"><!--REVIEWS-->
+        <div class="flex justify-center space-x-28">
+            <!--REVIEWS-->
             <div>
                 <img src="assets/resources/image-emily.jpg" alt="">
                 <p></p>
