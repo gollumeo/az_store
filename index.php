@@ -18,7 +18,7 @@
             <a href="">Products</a>
             <a href="">Contact</a>
         </nav>
-        <img src="assets/resources/shopping-cart.svg" alt="Cart" width="50px" height="50px">
+        <a href="./cart.php" alt="shopping cart"><img src="assets/resources/shopping-cart.svg" alt="Cart" width="50px" height="50px"></a>
     </header>
     <main class="flex flex-col w-full space-y-10">
         <div class="flex items-center justify-evenly space-x-20"> <!--BIG TITLE + SHOE -->

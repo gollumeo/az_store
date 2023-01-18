@@ -1,5 +1,5 @@
 <?php
-session_start();
+
 $articles = [
     [
         "id" => 1,
@@ -35,7 +35,7 @@ foreach ($articles as $item) {
         <input type="number" name="quantity" min="1" value="1">
         <input type="submit" name="add_to_cart" value="Add to Cart">
     </form>
-<?
+<?php
 }
 
     if (!isset($_SESSION['cart'])) {
@@ -58,4 +58,4 @@ foreach ($articles as $item) {
         }
     }
 
-?>
+    ?>
