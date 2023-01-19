@@ -10,85 +10,72 @@
 </head>
 
 <body
-    class="w-screen min-h-screen space-y-16 flex flex-col items-center text-white bg-gradient-to-t from-slate-900 to-slate-500">
-    <header>
-        <div class="flex space-x-96 items-center w-screen justify-center">
-            <p>AZ[store]</p>
-            <nav>
-                <a href="">Home</a>
-                <a href="">About</a>
-                <a href="">Products</a>
-                <a href="">Contact</a>
-            </nav>
-            <img src="assets/resources/shopping-cart.svg" alt="Cart" width="30px" height="30px">
-        </div>
+    class="min-w-screen min-h-screen space-y-16 flex flex-col items-center text-white bg-gradient-to-t from-slate-900 to-slate-500">
+    <header class="flex w-full justify-around items-center">
+        <p class="header">AZ[store]</p>
+        <nav class="header">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Products</a>
+            <a href="">Contact</a>
+        </nav>
+        <img src="assets/resources/shopping-cart.svg" alt="Cart" width="50px" height="50px">
     </header>
-    <main>
-        <div class="flex items-center justify-center space-x-32">
+    <main class="flex flex-col w-full space-y-10">
+        <div class="flex items-center justify-evenly space-x-20">
             <!--BIG TITLE + SHOE -->
             <div>
                 <p class="text-9xl">SHOE THE <br> RIGHT <span class="text-blue-700">ONE</span>.</p>
                 <button class="text-3xl">See our store</button>
             </div>
             <div>
-                <img src="assets/resources/shoe_one.png" alt="nike" width="300px" height="300px">
+                <img src="assets/resources/shoe_one.png" alt="nike" width="800px" height="800px">
             </div>
         </div>
-        <div class="flex justify-center">
-            <!--SNEAKERS LIST-->
-            <div>
-                <img src="assets/resources/shoe_one.png" alt="" width="150px" height="150px">
-                <div>
-                    <div></div>
-                    <button></button>
-                </div>
-            </div>
-            <div>
-                <img src="assets/resources/shoe_one.png" alt="" width="150px" height="150px">
-                <div>
-                    <div></div>
-                    <button></button>
-                </div>
-            </div>
-            <div>
-                <img src="assets/resources/shoe_one.png" alt="" width="150px" height="150px">
-                <div>
-                    <div></div>
-                    <button></button>
-                </div>
-            </div>
-            <div>
-                <img src="assets/resources/shoe_one.png" alt="" width="150px" height="150px">
-                <div>
-                    <div></div>
-                    <button></button>
-                </div>
+        <div>
+            <p>Our last products</p>
+            <div class="w-full flex justify-around">
+                <!--SNEAKERS LIST-->
+                <?php include 'articles.php'; ?>
             </div>
         </div>
-        <div class="flex justify-center">
+        <div class="flex flex-col items-center">
             <!--PROVIDE THE BEST QUALITY-->
-            <img src="assets/resources/shoe_two.png" alt="" width="100px" height="100px">
-            <p></p>
-            <p></p>
+            <img src="assets/resources/shoe_two.png" alt="" width="450px">
+            <p class="text-8xl text-center">WE PROVIDE YOU<br>THE <span class="text-blue-700">BEST</span> QUALITY.</p>
+            <p class="text-2xl text-center w-3/5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas
+                veritatis, quam quae dolores reiciendis velit nobis eum quo pariatur id recusandae nostrum at rem vel,
+                quia facere iste architecto nemo!</p>
         </div>
-        <div class="flex justify-center space-x-28">
+        <div class="m-auto flex w-3/4 justify-center ">
             <!--REVIEWS-->
-            <div>
-                <img src="assets/resources/image-emily.jpg" alt="">
-                <p></p>
-                <p></p>
+            <div class=" review">
+                <img src="assets/resources/image-emily.jpg" class="rounded-full w-32" alt="">
+                <br>
+                <p>Emily from xyz</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Aliquam, est aut architecto dolore quibusdam.
+                </p>
             </div>
-            <div>
-                <img src="assets/resources/image-thomas.jpg" alt="">
-                <p></p>
-                <p></p>
+            <div class="review">
+                <img src="assets/resources/image-thomas.jpg" class="rounded-full w-32" alt="">
+                <br>
+                <p>Thomas from corporate</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Aliquam, est aut architecto dolore quibusdam.
+                </p>
             </div>
-            <div>
-                <img src="assets/resources/image-jennie.jpg" alt="">
-                <p></p>
-                <p></p>
+            <div class="review">
+                <img src="assets/resources/image-jennie.jpg" class="rounded-full w-32" alt="">
+                <br>
+                <p>Jennie from Nike</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Aliquam, est aut architecto dolore quibusdam.
+                </p>
             </div>
-        </div>
     </main>
     <footer>
         <nav class="text-2xl">

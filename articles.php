@@ -32,28 +32,30 @@ $articles = [
 ];
 
 foreach ($articles as $item) {
-?>
-<div class="articles"><img width="300px" src="<?php echo $item["image"]; ?>" alt="">
-    <form method=" post" action="cart.php">
-        <input type="hidden" name="item_id" value="<?php echo $item['id']; ?>">
-        <input type="number" name="quantity" min="1" value="1">
-        <input type="submit" name="add_to_cart" value="Add to Cart">
-    </form>
-</div>
-<?php };
+
+echo '<div class="articles"><img width="300px" src="'.$item["image"].'" alt="">
+        <form method=" post" action="cart.php">
+            <input type="hidden" name="item_id" value='.$item['id'].'">
+            <input type="number" name="quantity" min="1" value="1">
+            <input type="submit" name="add_to_cart" value="Add to Cart"
+            class="bg-white w-auto p-2 rounded-lg text-slate-700 hover:bg-slate-700 hover:text-white shadow-md shadow-red h-auto transition-all">
+        </form>
+    </div>';
+};
+
 
 if (isset($_POST['add_to_cart'])) {
-    $item_id = $_POST['item_id'];
-    $quantity = $_POST['quantity'];
-    if (!isset($_SESSION['cart'])) {
-        $_SESSION['cart'] = array();
-    }
-    if (!isset($_SESSION['cart'][$item_id])) {
-        // If the item isn't in the cart, add it with the specified quantity
-        $_SESSION['cart'][$item_id] = $quantity;
-    } else {
-        // If the item is already in the cart, update the quantity
-        $_SESSION['cart'][$item_id] += $quantity;
-    }
+$item_id = $_POST['item_id'];
+$quantity = $_POST['quantity'];
+if (!isset($_SESSION['cart'])) {
+$_SESSION['cart'] = array();
+}
+if (!isset($_SESSION['cart'][$item_id])) {
+// If the item isn't in the cart, add it with the specified quantity
+$_SESSION['cart'][$item_id] = $quantity;
+} else {
+// If the item is already in the cart, update the quantity
+$_SESSION['cart'][$item_id] += $quantity;
+}
 }
 ?>
