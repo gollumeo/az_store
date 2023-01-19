@@ -31,8 +31,8 @@
                 <img class="z-50" src="assets/resources/shoe_one.png" alt="nike">
             </div>
         </div>
-        <div class="">
-            <p>Our last products</p>
+        <div>
+            <p class="mx-16 my-10 text-3xl"><span class="text-blue-700">Our</span> last products</p>
             <div class="w-full flex justify-around"><!--SNEAKERS LIST-->
                 <?php include 'articles.php'; ?>
             </div>
@@ -45,17 +45,17 @@
         <div class="flex justify-center space-x-28"><!--REVIEWS-->
             <div class="review">
                 <img src="assets/resources/image-emily.jpg" class="rounded-full w-32" alt="">
-                <p>Emily from xyz</p>
+                <p class="reviewName">Emily from xyz</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, est aut architecto dolore quibusdam quia tenetur mollitia doloremque esse ipsa, blanditiis eaque expedita optio labore sit aspernatur nostrum. Rem, fugit.</p>
             </div>
             <div class="review">
                 <img src="assets/resources/image-thomas.jpg" class="rounded-full w-32" alt="">
-                <p>Thomas from corporate</p>
+                <p class="reviewName">Thomas from corporate</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, libero assumenda inventore id, officia maiores voluptate sint similique consequatur ducimus enim veritatis harum asperiores numquam? Mollitia iure voluptate doloribus ullam!</p>
             </div>
             <div class="review">
                 <img src="assets/resources/image-jennie.jpg" class="rounded-full w-32" alt="">
-                <p>Jennie from Nike</p>
+                <p class="reviewName">Jennie from Nike</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eos quam distinctio sequi itaque dolore aspernatur quia eaque, facilis, voluptatem amet pariatur incidunt veniam nostrum quibusdam reiciendis molestiae dolorem! Et!</p>
             </div>
         </div>
