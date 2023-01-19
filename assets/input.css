@@ -29,7 +29,7 @@
       {
         @apply appearance-none block w-full border rounded py-3 px-4 mb-3;
       }
-  
+
       .label_input
       {
           @apply block uppercase tracking-wide text-xs font-bold mb-2;

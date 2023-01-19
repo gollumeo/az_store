@@ -16,13 +16,13 @@
             'firstname' => $_POST['firstname'],
             'mail' => $_POST['mail'], //a valider
             'phone' => $_POST['phone'], //a valider
-        
+
             'street' => $_POST['street'],
             'num' => $_POST['num'], //a valider
             'add' => $_POST['add'],
             'city' => $_POST['city'],
             'postal' => $_POST['postal'], //a valider
-        
+
             'cardNum' => $_POST['cardNum'], //a valider
             'cardName' => $_POST['cardName'],
             'cardMonth' => sprintf("%02d", $_POST['cardMonth']), //a valider
