@@ -144,7 +144,7 @@
                     <td class="border-r-2 border-solid border-black">
                         <form method="post" action="cart.php">
                             <input type="hidden" name="item_id" value="<?php echo $item_id; ?>">
-                            <input type="submit" name="remove_from_cart" value="Remove" class="bg-white w-auto p-2 rounded-lg text-slate-700 hover:bg-slate-700 hover:text-white shadow-md shadow-red h-auto transition-all">
+                            <input type="submit" name="remove_from_cart" value="Remove" class="bg-white w-auto p-2 rounded-lg text-slate-700 hover:bg-slate-700 hover:text-white shadow-md shadow-red h-auto transition-all font-bold">
                         </form>
                     </td>
                 </tr>
@@ -159,15 +159,15 @@
         </tr>
     </table>
     <div class="mx-auto mt-20 flex flex-row gap-5">
-        <a href="./index.php" alt="homepage"><button class="bg-slate-900 p-3 rounded-lg text-lg font-bold hover:scale-110 transition-all shadow-lg w-[10vw] h-auto text-md shadow-black hover:bg-white hover:text-slate-900">Back to shopping</button></a>
-        <a href="./checkout.php" alt="homepage"><button class="bg-blue-500 text-white p-3 rounded-lg text-lg font-bold hover:scale-110 transition-all shadow-lg w-[10vw] h-auto shadow-black hover:bg-white hover:text-blue-500">Purchase</button></a>
+        <a href="./index.php" alt="homepage"><button class="bg-slate-900 p-3 rounded-lg font-bold hover:scale-110 transition-all shadow-lg w-[10vw] h-auto text-sm shadow-black hover:bg-white hover:text-slate-900">Back to shopping</button></a>
+        <a href="./checkout.php" alt="checkout"><button class="bg-blue-500 text-white p-3 rounded-lg font-bold hover:scale-110 transition-all shadow-lg w-[10vw] h-auto shadow-black hover:bg-white hover:text-blue-500 text-sm">Purchase</button></a>
     </div>
     <footer class="flex flex-row absolute bottom-0 border-t-[1px] border-slate-400 border-solid h-20 w-full text-center justify-center items-center text-sm">
         <nav class="flex font-medium gap-4">
-            <a href="">Home</a>
-            <a href="">About</a>
-            <a href="">Products</a>
-            <a href="">Contact</a>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Products</a>
+            <a href="#">Contact</a>
         </nav>
     </footer>
 </body>

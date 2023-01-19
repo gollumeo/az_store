@@ -9,16 +9,19 @@
     <title>Document</title>
 </head>
 
-<body class="min-w-screen min-h-screen space-y-16 flex flex-col items-center text-white bg-gradient-to-t from-slate-900 to-slate-500">
-    <header class="flex w-full justify-around items-center">
-        <p class="header">AZ[store]</p>
-        <nav class="header">
-            <a href="">Home</a>
-            <a href="">About</a>
-            <a href="">Products</a>
-            <a href="">Contact</a>
+<body class="min-h-screen flex flex-col items-center text-white bg-gradient-to-t from-slate-900 to-slate-500">
+    <header class="flex flex-row w-full justify-around items-center border-b-[1px] border-slate-400 border-solid h-12">
+        <p class="header font-bold"><a href="./index.php">AZ[store]</a></p>
+        <nav class="flex header text-sm gap-4 text-bold font-medium">
+            <a href="./index.php">Home</a>
+            <a href="#">About</a>
+            <a href="#">Products</a>
+            <a href="#">Contact</a>
         </nav>
-        <a href="./cart.php" alt="shopping cart"><img src="assets/resources/shopping-cart.svg" alt="Cart" width="50px" height="50px"></a>
+
+        <div class="flex flex-row w-auto h-auto text-sm justify-center items-center">
+            <img src="assets/resources/shopping-cart.svg" alt="Cart" class="text-sm h-[16px] w-[16px]"><a href="./cart.php" alt="shopping cart"><span class="inline-block ml-2 font-normal">Login</span></a>
+        </div>
     </header>
     <main class="flex flex-col w-full space-y-10">
         <div class="flex items-center justify-evenly space-x-20"> <!--BIG TITLE + SHOE -->
@@ -59,8 +62,8 @@
             </div>
         </div>
     </main>
-    <footer>
-        <nav class="text-2xl">
+    <footer class="flex border-t-[1px] border-slate-400 border-solid h-20 w-full text-center justify-center items-center text-sm m-auto">
+        <nav class="flex font-medium gap-4 text-center items-center justify center">
             <a href="">Home</a>
             <a href="">About</a>
             <a href="">Products</a>
