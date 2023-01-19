@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./output.css" type="text/css">
+    <link rel="stylesheet" href="./assets/output.css" type="text/css">
     <title>Document</title>
 </head>
 <body class="bg-gradient-to-t from-slate-900 to-slate-500 bg-no-repeat h-screen w-full flex flex-col justify-center items-center">
     <div class="bg-slate-500 shadow-md rounded px-8 pt-6 pb-8 mb-4 mt-4 w-9/12 my-2 flex flex-col justify-center items-center content-center">
     <?php
-        session_start();
+        // session_start();
         $pesronnalDatas = array(
             'lastname' => $_POST['lastname'],
             'firstname' => $_POST['firstname'],
