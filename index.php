@@ -47,7 +47,13 @@
                 veritatis, quam quae dolores reiciendis velit nobis eum quo pariatur id recusandae nostrum at rem vel,
                 quia facere iste architecto nemo!</p>
         </div>
-        <div class="m-auto flex w-3/4 justify-center ">
+        <div class="m-auto
+        
+        
+        
+        
+        
+        flex w-3/4 justify-center ">
             <!--REVIEWS-->
             <div class=" review">
                 <img src="assets/resources/image-emily.jpg" class="rounded-full w-32" alt="">
