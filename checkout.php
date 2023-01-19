@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,26 +12,26 @@
 <body class="bg-gradient-to-t from-slate-900 to-slate-500 bg-no-repeat h-screen w-full flex flex-col justify-center items-center">
 <?php
     // session_start();
-    if (!isset($_SESSION["personnalDatas"])) {
-        $_SESSION["personnalDatas"] =  array(
-            'lastname' => "",
-            'firstname' => "",
-            'mail' =>"", //a valider
-            'phone' => "", //a valider
+    // if (!isset($_SESSION["personnalDatas"])) {
+    //     $_SESSION["personnalDatas"] =  array(
+    //         'lastname' => "",
+    //         'firstname' => "",
+    //         'mail' =>"", //a valider
+    //         'phone' => "", //a valider
         
-            'street' => "",
-            'num' => "", //a valider
-            'add' => "",
-            'city' => "",
-            'postal' => "", //a valider
+    //         'street' => "",
+    //         'num' => "", //a valider
+    //         'add' => "",
+    //         'city' => "",
+    //         'postal' => "", //a valider
         
-            'cardNum' => "", //a valider
-            'cardName' => "",
-            'cardMonth' => "", //a valider
-            'cardYear' => "", //a valider
-            'cardSecret' => "", //a valider
-        );
-    }
+    //         'cardNum' => "", //a valider
+    //         'cardName' => "",
+    //         'cardMonth' => "", //a valider
+    //         'cardYear' => "", //a valider
+    //         'cardSecret' => "", //a valider
+    //     );
+    // }
 ?>
     <form action="result.php" method="post" class='bg-slate-500 shadow-md rounded px-8 pt-6 pb-8 mb-4 mt-4 w-9/12 my-2 flex flex-col justify-center items-center content-center'>
         <div class="bg-slate-400 shadow-md rounded px-8 pt-6 pb-8 mb-4 mt-4 w-9/12 my-2">
@@ -53,13 +55,13 @@
                     <label class='label_input' for="mail">
                         Mail: 
                     </label>
-                    <input required class='input' type="text" id="mail" placeholder="plebo@tre.bo" name="mail" value="<?php echo $_SESSION["personnalDatas"]['mail'] ?>">
+                    <input required class='input' type="email" id="mail" placeholder="plebo@tre.bo" name="mail" value="<?php echo $_SESSION["personnalDatas"]['mail'] ?>">
                 </p>
                 <p class="col-span-1">
                     <label class='label_input' for="phone">
                         Phone number: 
                     </label>
-                    <input required class='input' maxlength="10" type="number" id="phone" placeholder="0123456789" name="phone" value="<?php echo $_SESSION["personnalDatas"]['phone'] ?>">
+                    <input required class='input' maxlength="10" type="phone" id="phone" placeholder="0123456789" name="phone" value="<?php echo $_SESSION["personnalDatas"]['phone'] ?>">
                 </p>
             </div>
         </div>
@@ -85,7 +87,7 @@
                     <label class='label_input' for="add">
                         Details: 
                     </label>
-                    <input required class='input' type="text" id="add" placeholder="bb" name="add" value="<?php echo $_SESSION["personnalDatas"]['add'] ?>">
+                    <input class='input' type="text" id="add" placeholder="bb" name="add" value="<?php echo $_SESSION["personnalDatas"]['add'] ?>">
                 </p>
                 <p class="col-span-3 row-span-1">
                     <label class='label_input' for="city">
@@ -154,7 +156,7 @@
                 <label class='label_input' for="save_or_not">
                     Save datas ?
                 </label>
-                <input required type="checkbox" name='save_or_not' id="save_or_not">
+                <input type="checkbox" name='save_or_not' id="save_or_not">
             </p>
             <p>
                 <button class='inline-flex items-center px-4 py-2 bg-gray-200 hover:bg-gray-300 text-gray-800 text-sm font-medium rounded-md'>Validate</button>
