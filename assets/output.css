@@ -574,6 +574,10 @@ video {
   display: flex;
 }
 
+.hidden {
+  display: none;
+}
+
 .table {
   display: table;
 }
@@ -668,6 +672,30 @@ video {
 
 .to-slate-500 {
   --tw-gradient-to: #64748b;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-9xl {
+  font-size: 8rem;
+  line-height: 1;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-8xl {
+  font-size: 6rem;
+  line-height: 1;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-center {
