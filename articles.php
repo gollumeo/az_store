@@ -33,12 +33,21 @@ $articles = [
 
 foreach ($articles as $item) {
 ?>
-    <div class="articles"><img width="300px" src="<?php echo $item["image"]; ?>" alt="">
-        <form method=" post" action="cart.php">
-            <input type="hidden" name="item_id" value="<?php echo $item['id']; ?>">
-            <input type="number" name="quantity" min="1" value="1">
-            <input type="submit" name="add_to_cart" value="Add to Cart">
-        </form>
+    <div class="articles">
+        <div class="articlesImg">
+            <img width="170px" src="<?php echo $item["image"]; ?>" alt="">
+        </div>
+        <div class="flex justify-between">
+            <div>
+                <div class=""><?php echo $item["name"]; ?></div>
+                <div class=""><?php echo $item["price"]; ?>€</div>
+            </div>
+            <form method=" post" action="cart.php">
+                <input type="hidden" name="item_id" value="<?php echo $item['id']; ?>">
+                <input type="hidden" name="quantity" min="1" value="1">
+                <input class="" type="submit" name="add_to_cart" value="Add to Cart">
+            </form>
+        </div>
     </div>
 <?php };
 

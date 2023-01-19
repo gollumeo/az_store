@@ -23,12 +23,12 @@
     <main class="flex flex-col w-full space-y-10">
         <div class="flex items-center justify-evenly space-x-20"> <!--BIG TITLE + SHOE -->
             <div>
-                <p class="text-9xl">SHOE THE <br> RIGHT <span class="text-blue-700">ONE</span>.</p>
-                <button class="text-3xl">See our store</button>
+                <p class="text-8xl">SHOE THE <br> RIGHT <span class="text-blue-700">ONE</span>.</p>
+                <button class="text-2xl">See our store</button>
             </div>
             <div class="relative">
-                <p class="absolute text-[450px] text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10">NIKE</p>
-                <img class="z-50" src="assets/resources/shoe_one.png" alt="nike">
+                <p class="absolute text-[300px] text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10">NIKE</p>
+                <img class="z-50 w-[600px]" src="assets/resources/shoe_one.png" alt="nike">
             </div>
         </div>
         <div>
